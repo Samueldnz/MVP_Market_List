@@ -1,0 +1,25 @@
+/* style.css - simples e limpo */
+:root { --bg:#f7f8fb; --card:#fff; --accent:#2E7D32; --muted:#666; --danger:#c62828; font-family:Inter, system-ui, -apple-system, "Helvetica Neue", Arial; }
+*{box-sizing:border-box}
+body{background:var(--bg); margin:0; color:#222}
+.container{max-width:1100px;margin:28px auto;padding:18px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+header h1{margin:0;font-size:20px}
+nav a.btn, .btn { background:var(--accent); color:white; padding:8px 12px; text-decoration:none; border-radius:8px; display:inline-block }
+a.link{background:#777}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.tiny{padding:3px 6px;font-size:12px}
+.panel{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,0.06); margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,0.05)}
+.card-header{display:flex;justify-content:space-between;align-items:center}
+.card-body{margin-top:8px}
+.form-add-alimento input, .form-add-substituicao input, input, textarea, select { padding:8px;border-radius:6px;border:1px solid #ddd;margin-right:6px}
+label{display:block;margin-bottom:8px}
+.actions{margin-top:8px}
+.table{width:100%;border-collapse:collapse}
+.table th, .table td{border-bottom:1px solid #eee;padding:8px;text-align:left}
+.error{color:var(--danger)}
+.warning{color:#a65d00}
+.delete-btn{background:#d32f2f;color:white;border-radius:6px;padding:6px 8px;border:none;cursor:pointer}
+.card-actions{margin-top:12px}
